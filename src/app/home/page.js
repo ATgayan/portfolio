@@ -8,7 +8,6 @@ import ReactTypingEffect from "react-typing-effect";
 import Popupwindow from '../component/popupwindow';
 
 export default function Hompage() {
-
     const [isLoaded, setIsLoaded] = useState(false);
     const [isState, setState] = useState(false);
 
@@ -16,16 +15,12 @@ export default function Hompage() {
         setIsLoaded(true);
     }, []);
 
-
     const handleState = () => {
-        setState(!isState); 
-        
+        setState(!isState);
     };
 
     return (
         <div className="animate-fadeIn flex flex-col">
-           
-
             <div className="w-auto h-auto z-50">
                 <Navbar hadleClick={handleState} />
             </div>
@@ -36,8 +31,8 @@ export default function Hompage() {
                         {isLoaded && (
                             <div>
                                 <div>
-                                    <p className=" font-bold text-2xl m-4 text-slate-200" style={{ animationDelay: "0.3s" }}>
-                                        Hello, I'm
+                                    <p className="font-bold text-2xl m-4 text-slate-200" style={{ animationDelay: "0.3s" }}>
+                                        Hello, I&apos;m
                                     </p>
                                 </div>
                                 <div>
@@ -48,14 +43,12 @@ export default function Hompage() {
                                 </div>
                             </div>
                         )}
-                         
-                         <div className='z-100' >
+
+                        <div className='z-100'>
                             {isState && (
-                                <Popupwindow  hadleClick={handleState}/>
+                                <Popupwindow hadleClick={handleState} />
                             )}
                         </div>
-                        
-
 
                         <div className="w-50 h-20 items-center flex">
                             <div className="flex">
@@ -67,7 +60,6 @@ export default function Hompage() {
                         </div>
                     </div>
                 </div>
-
 
                 <div className="h-screen mt-16 w-[50%]">
                     <div className="relative h-screen">
@@ -81,7 +73,6 @@ export default function Hompage() {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }
