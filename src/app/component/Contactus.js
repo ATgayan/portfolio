@@ -52,11 +52,13 @@ export default function ContactUs({ MyContact }) {
               uifresh.net@gmail.com
             </a>
           </p>
-          <img
-            src="./images/plane.png"
-            alt="Plane"
-            className="mx-auto mt-4 w-full max-w-[200px] animation uf-animation hidden md:block"
-          />
+          <Image
+  src="/images/plane.png"
+  alt="Plane"
+  width={200}
+  height={200}
+  className="mx-auto mt-4 animation uf-animation hidden md:block"
+/>
         </div>
   
         {/* Right Section */}
@@ -77,7 +79,7 @@ export default function ContactUs({ MyContact }) {
                 placeholder="Enter your email"
               />
               <div className="text-sm text-white mt-1">
-                We'll never share your email with anyone else.
+              <p>We&apos;ll never share your email with anyone else.</p>
               </div>
             </div>
   
