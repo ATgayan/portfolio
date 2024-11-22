@@ -4,25 +4,59 @@ import { useState, useEffect } from 'react';
 import Navbar from "../component/navbar";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 
-import ReactTypingEffect from "react-typing-effect";
 import Popupwindow from '../component/popupwindow';
+import MyworkWindow from '../component/Mywork';
+import MyServices from '../component/MyService';
+import ContactUs from '../component/Contactus';
 
 export default function Hompage() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [isState, setState] = useState(false);
+    // const [Myworkwindow, setWork] = useState(false);
+    // const [isState, setState] = useState(false);
 
     useEffect(() => {
         setIsLoaded(true);
     }, []);
 
     const handleState = () => {
-        setState(!isState);
+        if (isState > 0) {
+            setState(false);
+        }
+        else {
+            setState(1);
+        }
+    };
+    const handleState2 = () => {
+        if (isState > 0) {
+            setState(false);
+        }
+        else {
+            setState(2);
+        }
+    };
+    const handleState3 = () => {
+        if (isState > 0) {
+            setState(false);
+        }
+        else {
+            setState(3);
+        }
+    };
+
+    const handleState4 = () => {
+        if (isState > 0) {
+            setState(false);
+        }
+        else {
+            setState(4);
+        }
     };
 
     return (
         <div className="animate-fadeIn flex flex-col">
             <div className="w-auto h-auto z-50">
-                <Navbar hadleClick={handleState} />
+                <Navbar hadleClick={handleState} MyworkPopup={handleState2} MyServices={handleState3} Contact={handleState4}/>
             </div>
 
             <div className="flex w-screen/2 h-[100%] overflow-hidden">
@@ -45,9 +79,19 @@ export default function Hompage() {
                         )}
 
                         <div className='z-100'>
-                            {isState && (
+                            {isState === 1 && (
                                 <Popupwindow hadleClick={handleState} />
                             )}
+                            {isState === 2 && (
+                                <MyworkWindow MyworkPopup={handleState2} />
+                            )}
+                            {isState === 3 && (
+                                <MyServices MyServicepopup={handleState3} />
+                            )}
+                             {isState === 4 && (
+                                <ContactUs MyContact={handleState4} />
+                            )}
+
                         </div>
 
                         <div className="w-50 h-20 items-center flex">
