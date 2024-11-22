@@ -2,6 +2,7 @@
 
 import { FaArrowLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ContactUs({ MyContact }) {
   const [animationState, setAnimationState] = useState("fadeIn");
