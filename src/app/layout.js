@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Athukorale",
+  title: "Portfolio",
   description: "Create my portpolio",
 };
 

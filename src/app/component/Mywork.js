@@ -27,12 +27,7 @@ export default function MyworkWindow({ MyworkPopup }) {
       content:
         "I’m skilled in a variety of technologies, including Flutter for mobile app development, React for building dynamic web applications, and Node.js for server-side programming. I also have a strong understanding of database management using MySQL.",
     },
-    {
-      image:'https://lh5.googleusercontent.com/ZVwm-B-lXbVyairBx2ywVzWNiNLiEbNuzYrKKU05xG5y9t6m3vrqdjvdsxCRL9kTtKeNnLzCIgXIv7HC8_Vd4G6xN8T8-t2j-NWptAlJEJvk_Q4VDt9lvXsnCwLjY6sJyhMoW3KlQHLhFiExRskph6g',
-      title: "Passions",
-      content:
-        "Beyond coding, I enjoy video editing, where I bring creativity to life using Adobe Premiere Pro. I’m passionate about learning new technologies, building meaningful projects, and constantly improving my skills to contribute to the tech industry.",
-    },
+    
   ];
 
   const nextSlide = () => {
@@ -49,7 +44,7 @@ export default function MyworkWindow({ MyworkPopup }) {
         animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
       }`}
     >
-      <div className="bg-black w-[80%] h-[80%] bg-teal-500 rounded-lg shadow-lg relative flex">
+      <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 w-[80%] h-[80%]  rounded-lg shadow-lg relative flex">
         {/* Close Button */}
         <div
           onClick={closePopup}
@@ -59,7 +54,7 @@ export default function MyworkWindow({ MyworkPopup }) {
         </div>
 
         {/* Left Section */}
-        <div className="pt-10 w-1/2 h-full bg-yellow-400 flex flex-col p-5">
+        <div className="pt-10 w-1/2 h-full  flex flex-col p-5">
           <h2 className="text-white text-2xl font-bold mb-4">{slides[currentSlide].title}</h2>
           <p className="text-white text-base leading-6 overflow-y-auto">
             {slides[currentSlide].content}

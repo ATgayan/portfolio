@@ -49,7 +49,7 @@ export default function MyServices({ MyServicepopup }) {
         animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
       }`}
     >
-      <div className="bg-black w-[80%] h-[80%] bg-teal-500 rounded-lg shadow-lg relative flex">
+      <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 w-[80%] h-[80%]  rounded-lg shadow-lg relative flex">
         {/* Close Button */}
         <div
           onClick={closePopup}

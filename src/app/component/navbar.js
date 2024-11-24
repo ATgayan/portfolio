@@ -7,11 +7,11 @@ export default function Navbar({hadleClick, MyworkPopup,MyServices,Contact}){
 
     return(
         <div>
-        <nav className="dark:bg-black fixed w-full top-0 left-0">
+        <nav className=" fixed w-full top-0 left-0">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
             {/* Center aligned ul */}
             <div className="flex justify-center flex-1">
-              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-black">
+              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 md:flex-row md:mt-0 md:border-0 ">
                 <li>
                   <div
                     onClick={hadleClick}
@@ -22,7 +22,7 @@ export default function Navbar({hadleClick, MyworkPopup,MyServices,Contact}){
                 </li>
                 <li>
                   <div
-                    onClick={Contact}
+                    // onClick={Contact}
                     className="cursor-pointer block py-2 px-3 rounded md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent md:hover:font-bold"
                   >
                     Contact us
@@ -30,7 +30,7 @@ export default function Navbar({hadleClick, MyworkPopup,MyServices,Contact}){
                 </li>
                 <li>
                   <div
-                    onClick={MyworkPopup}
+                    // onClick={MyworkPopup}
                     className="cursor-pointer block py-2 px-3 rounded md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent md:hover:font-bold"
                   >
                     My work
@@ -38,7 +38,7 @@ export default function Navbar({hadleClick, MyworkPopup,MyServices,Contact}){
                 </li>
                 <li>
                   <div
-                    onClick={MyServices}
+                    // onClick={MyServices}
                     className="cursor-pointer block py-2 px-3 rounded md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent md:hover:font-bold"
                   >
                     Services

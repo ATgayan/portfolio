@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from "../component/navbar";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 
-import Popupwindow from '../component/popupwindow';
+import Popupwindow from '../component/Aboutus';
 import MyworkWindow from '../component/Mywork';
 import MyServices from '../component/MyService';
 import ContactUs from '../component/Contactus';
@@ -54,7 +54,7 @@ export default function Hompage() {
     };
 
     return (
-        <div className="animate-fadeIn flex flex-col">
+        <div className="animate-fadeIn flex flex-col ">
             <div className="w-auto h-auto z-50">
                 <Navbar hadleClick={handleState} MyworkPopup={handleState2} MyServices={handleState3} Contact={handleState4}/>
             </div>
@@ -96,10 +96,30 @@ export default function Hompage() {
 
                         <div className="w-50 h-20 items-center flex">
                             <div className="flex">
-                                <FaLinkedin size={24} className="m-4" />
+                                <a
+                                href='https://www.linkedin.com/in/thushitha-athukorale-848765248'
+                                target='_blank'   
+                                ><FaLinkedin size={24} className="m-4"  /></a>
+
+                                <a
+                                 href='https://github.com/ATgayan'
+                                 target='_blank'   
+                                >
                                 <FaGithub size={24} className="m-4" />
-                                <FaFacebook size={24} className="m-4" />
+                                </a>
+
+                               <a
+                               href='https://www.facebook.com/sl.gaiya?mibextid=ZbWKwL'
+                               target='_blank'   
+                               >
+                               <FaFacebook size={24} className="m-4" />
+                               </a>
+                                <a
+                                 href='https://www.instagram.com/'
+                                 target='_blank'   
+                                >
                                 <FaInstagram size={24} className="m-4" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -108,10 +128,10 @@ export default function Hompage() {
                 <div className="h-screen mt-16 w-[50%]">
                     <div className="relative h-screen">
                         {/* Background image */}
-                        <div className="absolute inset-0 z-10 bg-[url('/assest/image/myPhoto.png')] bg-cover"></div>
+                        <div className="absolute inset-0 z-10 bg-[url('/assest/image/myPhoto.png')] opacity-50 bg-cover"></div>
 
                         {/* Overlay for transparency */}
-                        <div className="absolute inset-0 z-20 bg-black opacity-70"></div>
+                       
 
                         <div className="relative z-10 flex items-center justify-center h-full"></div>
                     </div>

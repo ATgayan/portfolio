@@ -29,11 +29,11 @@ export default function ContactUs({ MyContact }) {
    
 
     <div
-    className={`fixed inset-0 backdrop-blur-sm bg-opacity-50 flex items-center justify-center z-50 ${
+    className={` fixed inset-0 backdrop-blur-sm bg-opacity-50 flex items-center justify-center z-50 ${
       animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
     }`}
   >
-    <div className="bg-black rounded-lg w-[50%] h-auto rounded-4 shadow-lg relative flex flex-col p-6">
+    <div className=" rounded-lg w-[50%] h-auto rounded-4 shadow-lg relative flex flex-col p-6">
       {/* Close Button */}
       <div
         onClick={closePopup}
