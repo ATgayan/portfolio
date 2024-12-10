@@ -54,12 +54,14 @@ export default function Hompage() {
     };
 
     return (
-        <div className="animate-fadeIn flex flex-col ">
+        <div className="animate-fadeIn flex flex-col">
             <div className="w-auto h-auto z-50">
                 <Navbar hadleClick={handleState} MyworkPopup={handleState2} MyServices={handleState3} Contact={handleState4}/>
             </div>
 
-            <div className="flex w-screen/2 h-[100%] overflow-hidden">
+            <div className="md:flex w-screen/2 h-[100%] overflow-hidden z-20">
+            <div className="md:hidden absolute inset-0 z-10 bg-[url('/assest/image/myPhoto.png')] opacity-20 bg-cover"></div>
+
                 <div className="flex items-center justify-center mt-16 w-[50%] h-screen">
                     <div className="flex-col w-[90%] h-[40%] m-10">
                         {isLoaded && (
@@ -94,7 +96,7 @@ export default function Hompage() {
 
                         </div>
 
-                        <div className="w-50 h-20 items-center flex">
+                        <div className="w-50 h-20 items-center flex ">
                             <div className="flex">
                                 <a
                                 href='https://www.linkedin.com/in/thushitha-athukorale-848765248'
@@ -125,12 +127,11 @@ export default function Hompage() {
                     </div>
                 </div>
 
-                <div className="h-screen mt-16 w-[50%]">
-                    <div className="relative h-screen">
-                        {/* Background image */}
-                        <div className="absolute inset-0 z-10 bg-[url('/assest/image/myPhoto.png')] opacity-50 bg-cover"></div>
+                <div className="h-screen mt-16 w-[50%] ">
+                    <div className="relative h-screen ">
+                        
+                        <div className="absolute inset-0 z-10 md:bg-[url('/assest/image/myPhoto.png')] opacity-20 bg-cover"></div>
 
-                        {/* Overlay for transparency */}
                        
 
                         <div className="relative z-10 flex items-center justify-center h-full"></div>
