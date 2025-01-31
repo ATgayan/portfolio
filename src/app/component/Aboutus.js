@@ -17,7 +17,7 @@ export default function PopupWindow({ hadleClick }) {
 
   return (
     <div
-      className={`fixed inset-0 backdrop-blur-sm bg-opacity-50 flex items-center justify-center z-50 ${animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
+      className={`fixed inset-0 backdrop-blur-sm bg-slate-800 flex items-center justify-center z-50 ${animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
         }`}
     >
       <div

@@ -29,11 +29,11 @@ export default function ContactUs({ MyContact }) {
    
 
     <div
-    className={` fixed inset-0 backdrop-blur-sm bg-opacity-50 flex items-center justify-center z-50 ${
+    className={` fixed inset-0 backdrop-blur-sm bg-slate-800  flex items-center justify-center z-50 ${
       animationState === "fadeIn" ? "animate-fadeIn" : "animate-fadeOut"
     }`}
   >
-    <div className=" rounded-lg w-[50%] h-auto rounded-4 shadow-lg relative flex flex-col p-6">
+    <div className=" rounded-lg w-[50%] h-auto rounded-4 shadow-lg relative flex flex-col p-6 bg-gradient-to-br from-gray-900 via-black to-gray-800">
       {/* Close Button */}
       <div
         onClick={closePopup}
@@ -43,23 +43,15 @@ export default function ContactUs({ MyContact }) {
       </div>
   
       {/* Contact Us Section */}
-      <div className="flex flex-col md:flex-row pt-4">
+      <div className="flex  md:flex-row pt-4 justify-center flex-col items-center">
         {/* Left Section */}
-        <div className="md:w-1/2 text-center px-4 py-6 bg-gray-100 rounded-l-lg">
-          <h2 className="text-black text-2xl font-bold uppercase">Contact Us</h2>
-          <p className="mt-2">
-            Or reach out manually to{" "}
-            <a href="mailto:uifresh.net@gmail.com" className="text-white underline">
-              uifresh.net@gmail.com
-            </a>
+        <div className="md:w-1/2 text-center px-4 py-6  rounded-l-lg ">
+          <h2 className=" text-4xl font-bold uppercase">Contact Us</h2>
+          <p className="mt-2 text-2xl p-5">
+            my email eddress 
           </p>
-          <Image
-  src="/images/plane.png"
-  alt="Plane"
-  width={200}
-  height={200}
-  className="mx-auto mt-4 animation uf-animation hidden md:block"
-/>
+          <p className="hover:text-slate-400">thusitha.personal@gmail.com</p>
+         
         </div>
   
         {/* Right Section */}

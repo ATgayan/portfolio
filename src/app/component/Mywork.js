@@ -3,9 +3,16 @@
 import { FaArrowLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState } from "react";
 
+
+
 export default function MyworkWindow({ MyworkPopup }) {
   const [animationState, setAnimationState] = useState("fadeIn");
   const [currentSlide, setCurrentSlide] = useState(0);
+  
+
+  const Growmart = "/assest/project_images/Growmart.png"; 
+  const portpolio = "/assest/project_images/portpolio.png";
+  const Management_system = "/assest/project_images/geymanagementsystem.png";
 
   const closePopup = () => {
     setAnimationState("fadeOut");
@@ -16,16 +23,23 @@ export default function MyworkWindow({ MyworkPopup }) {
 
   const slides = [
     { 
-      image:'https://cdn.shopify.com/s/files/1/0070/7032/files/about-us-page-lunya.png?v=1716989532',
-      title: "About Us",
+      image: Growmart,
+      title: "Growmart",
       content:
-        "Hello! I’m Thushitha, an aspiring IT professional currently pursuing my degree in Information and Communication Technology (ICT). Alongside my academic journey, I’ve recently completed an internship at Aplicy, where I gained hands-on experience in both front-end and back-end development.",
+        "Growmart is a full-stack eCommerce platform built with React.js for the frontend, styled using manual CSS for full design control. The backend is powered by Express.js and MySQL, ensuring a scalable and efficient database structure.It features user authentication with JWT (JSON Web Token) for secure login and protected routes. The system includes essential eCommerce functionalities like product listings, shopping cart, orders, and user management.With a responsive and user-friendly UI, Growmart provides a seamless shopping experience across all devices. The backend ensures secure data handling, fast API responses, and authentication protection. This project is a fully functional eCommerce solution with a strong focus on security, performance, and usability.",
     },
     {
-      image:'https://lh4.googleusercontent.com/bMCggqZdtc7mhHymBnxdoZIje10C1s12nSjw52TPUisXscPnVaPgWl1oK4su5rZC6AWtUXd7a057-ZwWwniDn2a2exBq2I0oHmVBNsoyv7y4q3GfOP1g4zvKMLdIQlZhtxhkCyed7cWfaoVsc0Rhh2U',
-      title: "Technologies",
+      image:  portpolio,
+      title: " portpolio",
       content:
-        "I’m skilled in a variety of technologies, including Flutter for mobile app development, React for building dynamic web applications, and Node.js for server-side programming. I also have a strong understanding of database management using MySQL.",
+        "This is a modern and responsive portfolio website built using Next.js and Tailwind CSS, designed to showcase your skills, projects, and experience. The website features a clean UI, fast loading times, and SEO optimization for better visibility.It is deployed on GitHub Pages using an automated GitHub Actions workflow, ensuring smooth and hassle-free updates whenever you push changes to your repository. The use of Next.js dynamic routing allows for seamless navigation, while Tailwind CSS ensures easy customization and a modern look.The portfolio includes sections like About Me, Projects, Skills, Contact, and Resume, making it a great way to highlight your professional journey. With mobile-first responsiveness, it works flawlessly on all devices. This project serves as an ideal digital portfolio to impress potential employers and clients. ",
+    },
+    
+    {
+      image:  Management_system,
+      title: "Management system",
+      content:
+        "Gym Management System is a full-stack web application built using Next.js for a fast and responsive frontend, and Express.js for a powerful backend. The system uses Firebase Authentication for secure user login and Firebase Firestore as the database to store and manage gym-related data.It provides full CRUD operations, allowing admins to manage members, trainers, workout plans, subscriptions, and payments efficiently. Users can register, book sessions, track progress, and manage memberships with ease.With Next.js server-side rendering (SSR) and static generation (SSG), the platform ensures optimal performance and SEO. Firebase Firestore guarantees real-time updates, making data synchronization seamless across all users.This Gym Management System is a scalable, secure, and user-friendly solution for gym owners and members, providing an all-in-one platform for fitness management. ",
     },
     
   ];
@@ -65,7 +79,7 @@ export default function MyworkWindow({ MyworkPopup }) {
         <div className="w-1/2 h-full relative">
           {/* Background Image */}
           <div
-            className="absolute w-full h-full bg-cover bg-center"
+            className="absolute bg-cover bg-center w-[600px] h-[550px] rounded-lg z-0"
             style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
           ></div>
           

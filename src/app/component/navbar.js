@@ -11,7 +11,7 @@ export default function Navbar({ handleClick, MyworkPopup, MyServices, Contact }
       <nav className="fixed w-full h-14 top-0 right-0 shadow-md z-50 bg-black">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           {/* Logo Section */}
-          <div className="md:hidden absolute top-0 right-0 text-2xl font-bold text-white m-4">Brand</div>
+          {/* <div className="md:hidden absolute top-0 right-0 text-2xl font-bold text-white m-4">Brand</div> */}
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8 font-medium text-white">

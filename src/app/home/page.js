@@ -56,7 +56,7 @@ export default function Hompage() {
     return (
         <div className="animate-fadeIn flex flex-col">
             <div className="w-auto h-auto z-50">
-                <Navbar hadleClick={handleState} MyworkPopup={handleState2} MyServices={handleState3} Contact={handleState4}/>
+                <Navbar handleClick={handleState} MyworkPopup={handleState2} MyServices={handleState3} Contact={handleState4}/>
             </div>
 
             <div className="md:flex w-screen/2 h-[100%] overflow-hidden z-20">
