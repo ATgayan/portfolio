@@ -34,46 +34,46 @@ export const initialData = {
   profile: {
     name: "Thusitha Gayan",
     tagline: "Undergraduate ICT Student | Web Developer",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/profile_photo.jpg?height=400&width=400",
     intro:
       "Hi, I'm Thusitha Gayan, an undergraduate ICT student at Uva Wellassa University. Passionate about coding, creativity, and continuous learning.",
     about:
       "I'm currently studying Information and Communication Technology at Uva Wellassa University in Sri Lanka. I enjoy building web apps and learning new technologies. My journey in tech started with a curiosity about how websites work, which led me to pursue formal education in ICT.\n\nAs a web developer, I strive to create clean, efficient, and user-friendly applications. I'm constantly expanding my skill set and staying up-to-date with the latest industry trends.",
-    cvUrl: "https://example.com/ThusithaGayan-CV.pdf", // Added CV URL field
+    cvUrl: "https://drive.google.com/file/d/1REM3HyqW_SG4VDObBqJ82JADQ7sieG1g/view?usp=sharing", // Added CV URL field
   },
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack web application",
+      title: "Social media web app (linkora)",
+      description: "Linkora – University Student Social Platform",
       longDescription:
-        "A comprehensive e-commerce platform built with Next.js and Express. Features include user authentication, product catalog with filtering and search, shopping cart functionality, secure checkout process, and an admin dashboard for inventory management. The application uses MySQL for data storage and implements responsive design for optimal viewing on all devices.",
-      tags: ["Next.js", "Express", "MySQL", "Tailwind CSS", "Redux"],
-      image: "/placeholder.svg?height=450&width=800",
-      demoLink: "https://example.com/ecommerce",
-      githubLink: "https://github.com/ATgayan/ecommerce",
+        "Linkora is a campus-focused social networking platform built to help university students connect, collaborate, and grow. Designed with the needs of students in mind, it enables users to find like-minded peers based on skills, interests, and academic background.Students can share achievements, discover project partners, and build meaningful campus connections in a secure and interactive environment.",
+      tags: ["Next.js", "Express", "firebase", "Tailwind CSS"],
+      image: "/images/projects/linkora.png?height=450&width=800",
+      demoLink: "https://linkora-frontend.vercel.app/",
+      githubLink: "https://github.com/ATgayan/Linkora-be",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "invoice and quotation generator web app",
       description: "Productivity tool",
       longDescription:
-        "A task management application designed to help users organize their work efficiently. The app includes features such as task categorization, priority levels, due dates with reminders, progress tracking, and collaborative task sharing. Built with React for the web interface and React Native for the mobile app, ensuring a consistent experience across platforms. The backend is powered by Express with MySQL database.",
-      tags: ["React", "React Native", "Express", "MySQL", "Tailwind CSS"],
-      image: "/placeholder.svg?height=450&width=800",
-      demoLink: "https://example.com/taskmanager",
-      githubLink: "https://github.com/ATgayan/taskmanager",
+        "This web application was developed on request for a mechanical engineering company to streamline their invoice and quotation processes. The system allows company staff to easily create, manage, and generate PDF quotations and invoices, improving accuracy and efficiency in daily operations.Built with scalability and real-world usability in mind, the app ensures that financial documents are generated consistently and stored securely.",
+      tags: ["React", "Express", "firebase", "Tailwind CSS"],
+      image: "/images/projects/QuantifyPro.png?height=450&width=800",
+      demoLink: "",
+      githubLink: "https://github.com/DilshanWA/Inquoto",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "Data visualization",
+      title: "Tiktok video downloader (Tiksavr)",
+      description: "Download tool",
       longDescription:
-        "An interactive weather dashboard that displays current and forecasted weather data with beautiful visualizations. The application fetches data from multiple weather APIs and presents it in an intuitive interface with interactive charts. Users can search for locations, save favorites, and view detailed weather information including temperature, humidity, wind speed, and precipitation forecasts. The dashboard is fully responsive and optimized for all devices.",
-      tags: ["Next.js", "Tailwind CSS", "Chart.js", "API Integration"],
-      image: "/placeholder.svg?height=450&width=800",
-      demoLink: "https://example.com/weather",
-      githubLink: "https://github.com/ATgayan/weather",
+        "TikSaver is a web-based tool that allows users to download TikTok videos without watermarks quickly and for free. Built with Next.js and integrated with a free public API, the app provides a clean and responsive user experience across devices.Designed for speed and simplicity, TikSaver helps users save and share their favorite TikTok content effortlessly.",
+      tags: ["Next.js", "Tailwind CSS", "API Integration"],
+      image: "/images/projects/tiksavr.png?height=450&width=800",
+      demoLink: "https://tiksaver-ashy.vercel.app/",
+      githubLink: "https://github.com/ATgayan/Tiksaver",
     },
   ] as ProjectType[],
   technologies: [

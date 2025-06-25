@@ -106,11 +106,11 @@ export default function Home() {
               <Send className="h-4 w-4" />
               Contact Me
             </Button>
-            <Link href="/admin/login" className="hidden md:block">
-              <Button variant="ghost" className="text-teal-300 hover:text-teal-100">
+            {/* <Link href="/admin/login" className="hidden md:block">
+              <Button  variant="ghost" className="text-teal-300 hover:text-teal-100">
                 Admin
               </Button>
-            </Link>
+            </Link> */}
             <MobileNav />
           </div>
         </div>
