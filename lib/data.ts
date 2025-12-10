@@ -33,7 +33,7 @@ export type SocialType = {
 export const initialData = {
   profile: {
     name: "Thusitha Gayan",
-    tagline: "Undergraduate ICT Student | Web Developer",
+    tagline: "Undergraduate ICT Student | Fullstack Developer | Tech Enthusiast",
     image: "/images/profile_photo.jpg?height=400&width=400",
     intro:
       "Hi, I'm Thusitha Gayan, an undergraduate ICT student at Uva Wellassa University. Passionate about coding, creativity, and continuous learning.",

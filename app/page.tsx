@@ -24,6 +24,7 @@ import { ProjectDialog, type ProjectType } from "@/components/project-dialog"
 import { ContactDialog } from "@/components/contact-dialog"
 import { TechIcon } from "@/components/tech-icon"
 import { getData } from "@/lib/data"
+import { AnimatePresence, motion, useInView } from 'framer-motion';
 
 export default function Home() {
   const data = getData()
@@ -75,7 +76,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-teal-300/20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-white">
-            <span className="text-teal-300">Portfolio.</span>
+            <span className="text-teal-300">T</span>
           </Link>
           <nav className="hidden md:flex space-x-6">
             <Link href="#home" className="text-white hover:text-teal-300 transition-colors">
@@ -86,9 +87,6 @@ export default function Home() {
             </Link>
             <Link href="#technologies" className="text-white hover:text-teal-300 transition-colors">
               Technologies
-            </Link>
-            <Link href="#projects" className="text-white hover:text-teal-300 transition-colors">
-              Projects
             </Link>
             <Link href="#hobbies" className="text-white hover:text-teal-300 transition-colors">
               Hobbies
@@ -101,16 +99,11 @@ export default function Home() {
             <Button
               onClick={openContactDialog}
               variant="outline"
-              className="hidden md:flex items-center gap-2 border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black"
+              className="hidden md:flex items-center gap-2 border-teal-300 text-black hover:bg-teal-300 hover:text-black"
             >
               <Send className="h-4 w-4" />
               Contact Me
             </Button>
-            {/* <Link href="/admin/login" className="hidden md:block">
-              <Button  variant="ghost" className="text-teal-300 hover:text-teal-100">
-                Admin
-              </Button>
-            </Link> */}
             <MobileNav />
           </div>
         </div>
@@ -121,9 +114,13 @@ export default function Home() {
         <section id="home" className="py-20 md:py-32 container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                Hi, I'm <span className="text-teal-300">{data.profile.name}</span>
-              </h1>
+              
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 
+  overflow-hidden whitespace-nowrap 
+  animate-typing">
+  Hi, I'm <span className="text-teal-300">{data.profile.name}</span>
+</h1>
+
               <p className="text-xl md:text-2xl text-gray-400 mb-6">{data.profile.tagline}</p>
               <p className="text-gray-300 mb-8 max-w-lg">{data.profile.intro}</p>
               <div className="flex flex-wrap gap-4">
@@ -133,7 +130,7 @@ export default function Home() {
                 <Button
                   onClick={openContactDialog}
                   variant="outline"
-                  className="border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black px-6 py-3 rounded-md transition-all transform hover:scale-105"
+                  className="border-teal-300 text-black hover:bg-teal-300 hover:text-black px-6 py-3 rounded-md transition-all transform hover:scale-105"
                 >
                   <span className="flex items-center gap-2">
                     <Send className="h-4 w-4" />
@@ -143,7 +140,7 @@ export default function Home() {
                 {data.profile.cvUrl && (
                   <Button
                     variant="outline"
-                    className="border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black px-6 py-3 rounded-md transition-all transform hover:scale-105"
+                    className="border-teal-300 text-black hover:bg-teal-300 hover:text-black px-6 py-3 rounded-md transition-all transform hover:scale-105"
                     asChild
                   >
                     <a href={data.profile.cvUrl} target="_blank" rel="noopener noreferrer" download>
@@ -198,7 +195,7 @@ export default function Home() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black"
+                    className="border-teal-300 text-black hover:bg-teal-300 hover:text-black"
                     asChild
                   >
                     <a href={data.profile.cvUrl} target="_blank" rel="noopener noreferrer" download>
