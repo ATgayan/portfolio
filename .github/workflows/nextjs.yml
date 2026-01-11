@@ -26,10 +26,9 @@ jobs:
 
       - name: Prepare dist folder
         run: |
-          mkdir -p dist
-          cp index.html dist/
-          cp -r assets dist/  # if you have images or other files
-          cp dist/output.css dist/
+         cp index.html dist/
+         cp -r assets dist/  
+         cp dist/output.css dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
