@@ -76,7 +76,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-teal-300/20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-white">
-            <span className="text-teal-300">T</span>
+            <span className="text-teal-300"></span>
           </Link>
           <nav className="hidden md:flex space-x-6">
             <Link href="#home" className="text-white hover:text-teal-300 transition-colors">

@@ -34,12 +34,12 @@ export const initialData = {
   profile: {
     name: "Thusitha Gayan",
     tagline: "Undergraduate ICT Student | Fullstack Developer | Tech Enthusiast",
-    image: "/images/profile_photo.jpg?height=400&width=400",
+    image: "/portfolio/images/profile_photo.jpg?height=400&width=400",
     intro:
       "Hi, I'm Thusitha Gayan, an undergraduate ICT student at Uva Wellassa University. Passionate about coding, creativity, and continuous learning.",
     about:
       "I'm currently studying Information and Communication Technology at Uva Wellassa University in Sri Lanka. I enjoy building web apps and learning new technologies. My journey in tech started with a curiosity about how websites work, which led me to pursue formal education in ICT.\n\nAs a web developer, I strive to create clean, efficient, and user-friendly applications. I'm constantly expanding my skill set and staying up-to-date with the latest industry trends.",
-    cvUrl: "https://drive.google.com/file/d/1REM3HyqW_SG4VDObBqJ82JADQ7sieG1g/view?usp=sharing", // Added CV URL field
+    cvUrl: "https://drive.google.com/file/d/1XUUSsYZtGfRyqutVAxFkjbQwh0LyRrbe/view?usp=sharing", // Added CV URL field
   },
   projects: [
     {
@@ -60,7 +60,7 @@ export const initialData = {
       longDescription:
         "This web application was developed on request for a mechanical engineering company to streamline their invoice and quotation processes. The system allows company staff to easily create, manage, and generate PDF quotations and invoices, improving accuracy and efficiency in daily operations.Built with scalability and real-world usability in mind, the app ensures that financial documents are generated consistently and stored securely.",
       tags: ["React", "Express", "firebase", "Tailwind CSS"],
-      image: "/images/projects/QuantifyPro.png?height=450&width=800",
+      image: "/portfolio/images/projects/QuantifyPro.png?height=450&width=800",
       demoLink: "",
       githubLink: "https://github.com/DilshanWA/Inquoto",
     },
@@ -71,7 +71,7 @@ export const initialData = {
       longDescription:
         "TikSaver is a web-based tool that allows users to download TikTok videos without watermarks quickly and for free. Built with Next.js and integrated with a free public API, the app provides a clean and responsive user experience across devices.Designed for speed and simplicity, TikSaver helps users save and share their favorite TikTok content effortlessly.",
       tags: ["Next.js", "Tailwind CSS", "API Integration"],
-      image: "/images/projects/tiksavr.png?height=450&width=800",
+      image: "/portfolio/images/projects/tiksavr.png?height=450&width=800",
       demoLink: "https://tiksaver-ashy.vercel.app/",
       githubLink: "https://github.com/ATgayan/Tiksaver",
     },
