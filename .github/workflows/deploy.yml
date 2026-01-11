@@ -22,7 +22,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build Tailwind CSS
-        run: npx tailwindcss -i ./app/global.css -o ./dist/output.css --minify
+        run: npx tailwindcss -i ./app/globals.css -o ./dist/output.css --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
