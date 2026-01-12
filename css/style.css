@@ -9845,3 +9845,35 @@ textarea.form-control {
   color: #0d6efd;
 }
 
+
+/* Education section */
+
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 30px;
+  border-left: 3px solid #FFD700; /* yellow timeline line */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFD700; /* yellow node */
+  border-radius: 50%;
+  border: 3px solid white; /* optional white border for contrast */
+}
+
+.timeline-item .date {
+  font-weight: bold;
+  color: #FFD700; /* yellow dates */
+}
