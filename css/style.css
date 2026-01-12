@@ -9682,3 +9682,67 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+/* popup content styles */
+
+#certModal .modal-content {
+  background: #0b0b0b;
+  color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+#certModal .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#certModal .modal-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#certModal .close {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+#certModal .close:hover {
+  opacity: 1;
+}
+
+#certModal .modal-body p {
+  color: #cfcfcf;
+  margin-bottom: 0.5rem;
+}
+
+#certModal img {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Button tweak */
+#certModal .btn-primary {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  font-weight: 500;
+}
+
+#certModal .btn-primary:hover {
+  background: #e5e5e5;
+}
+
+
+.services-1:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.services-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
