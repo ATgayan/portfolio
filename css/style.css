@@ -9768,13 +9768,15 @@ textarea.form-control {
 }
 
 .project-card {
-  min-width: 320px; /* controls card width */
+  min-width: 320px;
+  width: 420px; 
   background: #111;
   border: 1px solid #222;
   border-radius: 12px;
   cursor: pointer;
   transition: 0.3s;
   flex-shrink: 0;
+  height: 350px;
 }
 
 .project-card:hover {
@@ -9808,6 +9810,79 @@ textarea.form-control {
   font-size: 12px;
   color: #0d6efd;
 }
+
+
+.yellow-theme {
+  background: #0f0f0f; 
+  color: #fff;
+}
+
+.yellow-theme .heading-section h2 {
+  color: #facc15;
+}
+
+.yellow-theme .heading-section p {
+  color: #d4d4d4;
+}
+
+.yellow-theme .big-2 {
+  color: rgba(250, 204, 21, 0.1);
+}
+
+/* Project Cards */
+.projects-horizontal {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.project-card {
+  min-width: 320px;
+  background: #181818;
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(250, 204, 21, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.25);
+  border-color: #facc15;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 16px;
+}
+
+.project-content h3 {
+  color: #facc15;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.project-content .tech {
+  font-size: 13px;
+  color: #fde047; /* lighter yellow */
+  background: rgba(250, 204, 21, 0.15);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
 
 
  /* Alternative Project section styles   */
@@ -9846,6 +9921,30 @@ textarea.form-control {
 }
 
 
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+.projects-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.projects-horizontal {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Education section */
 
 .timeline {
@@ -9876,4 +9975,27 @@ textarea.form-control {
 .timeline-item .date {
   font-weight: bold;
   color: #FFD700; /* yellow dates */
+}
+
+
+
+/* about section */
+
+.social-links .ftco-social li a {
+  width: 45px;
+  height: 45px;
+  background: #f8f9fa;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links .ftco-social li a:hover {
+  background: #f9c74f; /* yellow accent */
+  color: #000;
+  transform: translateY(-4px);
 }
